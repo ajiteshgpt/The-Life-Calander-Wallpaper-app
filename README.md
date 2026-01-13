@@ -42,4 +42,43 @@ A 365-dot grid tracking the current year.
 * **The Vibe:** Realizing that January was 3 years ago and tomorrow is already December.
 * **Customization:** Toggle between "Year Completed" (for the optimist) or "Year Left" (for the realist).
 
-![Year Calendar Mode](WhatsApp
+![Year Calendar Mode](WhatsApp%20Image%202026-01-14%20at%205.01.03%20AM%20(1).jpeg)
+
+### 3. 🎯 The Goal Calendar (Productivity Mode)
+A custom-dated grid for specific deadlines (Marathons, Placements, Exams, or that "Neural Networks" course you keep putting off).
+
+* **The Vibe:** The digital equivalent of your mom standing behind you with a stopwatch.
+* **Smart Logic:** Automatically defaults to today’s date but respects your right to manually change it.
+
+![Goal Calendar Mode](WhatsApp%20Image%202026-01-14%20at%205.01.03%20AM.jpeg)
+
+---
+
+## 🛠 Under the Hood (How I Built It)
+
+I’m a CSE student, so naturally, I over-engineered this to be as efficient as possible. Here is the logic behind the code:
+
+### 🔋 Battery Optimization (The pOLED Advantage)
+I run this on my own phone, so battery life was priority #1.
+* **True Black (#000000):** I utilized **Physical Pixel Shutdown**. On devices like the Moto Edge 40 (or any OLED), black pixels literally turn off. The background consumes **0% battery**.
+* **Memory Management:** I implemented strict bitmap recycling. Once the wallpaper is drawn, the app calls `recycle()` immediately to free up RAM. No bloat, no lag.
+
+### ⏱ Precision Scheduling (Solving the Android Doze Issue)
+Android loves to put apps to sleep to save power, which makes updating a wallpaper at exactly midnight tricky.
+* **The Logic:** `PeriodicWorkRequest` is too inaccurate (it has a 15-minute flex window).
+* **The Fix:** I used **Chained One-Time Requests** with millisecond calculations to ensure the update hits exactly at 12:00:01 AM.
+* **WakeLocks:** I implemented a `PARTIAL_WAKE_LOCK` for exactly 3 seconds during the update process so the CPU doesn't kill the drawing task halfway through.
+
+### 📐 Curved Screen Optimization
+* **The 60dp Buffer:** I noticed dots getting cut off on curved displays (like my Moto Edge). I added dynamic horizontal padding so the grid stays perfectly centered and visible, regardless of the screen curvature.
+
+---
+
+## 👨‍💻 Connect with the Creator
+
+**Ajitesh Gupta**
+[LinkedIn](#) | [GitHub](#)
+
+**Disclaimer:** Using this app may result in increased productivity, sudden realizations about the passing of time, and a very cool-looking home screen.
+
+> *"Time is a flat circle. We just made it a grid of dots."* 🔘🔘🔘🔘🟠🔘🔘🔘
