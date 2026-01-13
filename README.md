@@ -10,6 +10,10 @@ Welcome to **Life Calendar**, the only app that replaces your cheerful vacation 
 
 Why look at a picture of your cat when you can stare at a pixel-perfect grid of how many weeks you have left before you become a memory? *Memento Mori*, but make it Material 3.
 
+<p align="center">
+  <img src="life-mode.png" height="500" alt="Life Calendar Mode">
+</p>
+
 ---
 
 ## 🍎 The Inspiration (And The "Why")
@@ -34,15 +38,11 @@ Visualizes your entire lifespan in a 52-column grid (one for every week of the y
 * **Data Points:** Shows total weeks passed and your age in `Years : Months : Days`.
 * **Tech Flex:** Automatically calculates expectancy based on an 80-year projection (adjustable if you plan on living forever).
 
-![Life Calendar Mode](WhatsApp%20Image%202026-01-14%20at%205.01.04%20AM.jpeg)
-
 ### 2. 📅 The Year Calendar (Speedrun Mode)
 A 365-dot grid tracking the current year.
 
 * **The Vibe:** Realizing that January was 3 years ago and tomorrow is already December.
 * **Customization:** Toggle between "Year Completed" (for the optimist) or "Year Left" (for the realist).
-
-![Year Calendar Mode](WhatsApp%20Image%202026-01-14%20at%205.01.03%20AM%20(1).jpeg)
 
 ### 3. 🎯 The Goal Calendar (Productivity Mode)
 A custom-dated grid for specific deadlines (Marathons, Placements, Exams, or that "Neural Networks" course you keep putting off).
@@ -50,7 +50,10 @@ A custom-dated grid for specific deadlines (Marathons, Placements, Exams, or tha
 * **The Vibe:** The digital equivalent of your mom standing behind you with a stopwatch.
 * **Smart Logic:** Automatically defaults to today’s date but respects your right to manually change it.
 
-![Goal Calendar Mode](WhatsApp%20Image%202026-01-14%20at%205.01.03%20AM.jpeg)
+<p align="center">
+  <img src="year-mode.png" height="400" alt="Year Mode" style="margin-right: 10px;">
+  <img src="goal-mode.png" height="400" alt="Goal Mode" style="margin-left: 10px;">
+</p>
 
 ---
 
