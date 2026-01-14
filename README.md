@@ -6,6 +6,17 @@
 
 Why look at a picture of your cat when you can stare at a pixel-perfect grid of how many weeks you have left before you become a memory? 
 
+---
+## 🍎 The Inspiration (And The "Why")
+
+**Heavily inspired by the genius concept of [The Life Calendar](https://www.thelifecalendar.com/).**
+
+Let's be real: On iOS, setting this up is easy. You just run a **Shortcut**, set a trigger, and boom—instant anxiety.
+
+**But on Android?** It’s a total headache. You usually have to download a wallpaper engine, find a specific preset, tweak the settings, sacrifice a goat to the KWGT gods, and write three lines of JSON just to see a dot.
+
+**I did the work so you don't have to.**
+As a student, I didn't want to waste time configuring widgets or messing with automation scripts every morning. I built a single, native Android app to do it all for me. No shortcuts, no "pro version" needed to change the color. Just install, open, and let the existential dread wash over you.
 
 ---
 
